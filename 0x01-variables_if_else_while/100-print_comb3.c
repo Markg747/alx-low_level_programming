@@ -1,21 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  *main - start point
- *Description: Combination of two digits
+ *
+ *Description: prints combination of two numbers
+ *
  *Return: always 0 (success)
  */
 
 int main(void)
 {
 	int x;
+	int y;
 
-	for (x = 1; x < 90; x++)
+	for (x = 0; x <= 9; x++)
 	{
-		putchar((x / 10) + '0');
-		putchar((x % 10) + '0');
-		if (x != 89)
+		for (y = x + 1; y <= 9; y++)
+		{
+			putchar(x + '0');
+			putchar(y + '0');
+		}
+		if (x == 8 && y == 9)
+		{
+			continue;
+		}
+		else
 		{
 			putchar(',');
 			putchar(' ');
