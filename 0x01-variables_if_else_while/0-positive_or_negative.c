@@ -14,8 +14,8 @@ int main(void)
 {
 	int n;
 
-	srand(time(0));
-	n = rand();
+	srand(time(NULL));
+	n = rand() - RAND_MAX;
 
 	if (n > 0)
 	{
