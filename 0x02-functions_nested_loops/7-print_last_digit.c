@@ -5,7 +5,7 @@
  *
  *@x: stores integer
  *
- *Return: Always 0
+ *Return: last digit of x
  */
 
 int print_last_digit(int x)
