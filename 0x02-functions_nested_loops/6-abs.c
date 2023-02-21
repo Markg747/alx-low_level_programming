@@ -2,7 +2,7 @@
 
 /**
  *_abs - start point
- *@int: stores the absolute
+ *@x: stores the absolute
  *Return: Always 0
  */
 
