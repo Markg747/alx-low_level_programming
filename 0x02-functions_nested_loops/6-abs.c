@@ -2,18 +2,18 @@
 
 /**
  *_abs - start point
- *@x: stores the absolute
+ *@r: stores the absolute
  *Return: Always 0
  */
 
-int _abs(int x)
+int _abs(int r)
 {
-	if (x >= 0)
+	if (r >= 0)
 	{
-		return (x);
+		return (r);
 	}
 	else
 	{
-		return (x * -1);
+		return (r * -1);
 	}
 }
