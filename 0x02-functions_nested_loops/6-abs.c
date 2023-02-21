@@ -8,5 +8,6 @@
 
 int _abs(int n)
 {
-	_putchar(_abs(n) + '0');
+	_putchar(abs(n) + '0');
+	return (0);
 }
