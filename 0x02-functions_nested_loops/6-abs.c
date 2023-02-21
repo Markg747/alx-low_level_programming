@@ -6,8 +6,14 @@
  *Return: Always 0
  */
 
-int _abs(int n)
+int _abs(int x)
 {
-	_putchar(abs(n) + '0');
-	return (0);
+	if (x > 0)
+	{
+		return (x);
+	}
+	else
+	{
+		return (x * -1);
+	}
 }
