@@ -12,5 +12,5 @@
 
 int _putchar(char n)
 {
-	return (write(1, &n, 1);
+	return (write(1, &n, strlen(n)));
 }
