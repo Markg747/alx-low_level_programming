@@ -17,10 +17,11 @@ int main(void)
 	{
 		fib1 += fib0;
 		if (fib1 % 2 == 0)
-			sum  += fib1;
+		{
+			sum = sum + fib1;
 			fib0 = fib1 - fib0;
 			i++;
-
+		}
 	}
 	printf("%ld", sum);
 	return (0);
