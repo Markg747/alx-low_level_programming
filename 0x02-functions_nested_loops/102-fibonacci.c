@@ -19,6 +19,8 @@ int main(void)
 	{
 		fib2 = fib0 + fib1;
 
+		printf("%d", fib2);
+
 		fib0 = fib1;
 		fib1 = fib2;
 
