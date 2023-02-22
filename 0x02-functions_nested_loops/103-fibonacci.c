@@ -20,9 +20,9 @@ int main(void)
 		{
 			sum = sum + fib1;
 			fib0 = fib1 - fib0;
-			i++;
+			++i;
 		}
 	}
-	printf("%ld", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
