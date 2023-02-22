@@ -1,7 +1,7 @@
-include "main.h"
+#include "main.h"
 
 /**
- *main - check the code
+ *times_table - check the code
  *
  *Return: Always 0
  */
@@ -30,8 +30,17 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(o + 48);
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(t + 48);
 				_putchar(o + 48);
-
-				
-
+			}
+		}
+		_putchar('\n');
+	}
+}
