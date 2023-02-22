@@ -8,30 +8,30 @@
 
 int main(void)
 {
-	int fib0 = 1;
-	int fib1 = 2;
-	int fib2;
-	int i;
+	long fib0 = 1;
+	long fib1 = 2;
+	int i = 0;
 
-	printf("%d, %d, ", fib0, fib1);
-
-	for (i = 2; i < 50; i++)
+	while (i < 50)
 	{
-		fib2 = fib0 + fib1;
-
-		printf("%d", fib2);
-
-		fib0 = fib1;
-		fib1 = fib2;
-
-		if (i == 49)
+		if (i == 0)
 		{
-			continue;
+			printf("%ld, ", fib0);
+		}
+		else if (i == 1)
+		{
+			printf("%ld, ", fib1);
 		}
 		else
 		{
-			printf(", ");
+			fib1 = fib1 + fib0;
+			fib0 = fib1 - fib0;
 		}
+		++i;
 	}
+	printf("\n");
 	return (0);
 }
+
+
+
