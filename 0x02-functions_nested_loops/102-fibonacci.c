@@ -16,17 +16,17 @@ int main(void)
 	{
 		if (i == 0)
 		{
-			printf(" ,%ld", fib0);
+			printf(", %ld", fib0);
 		}
 		else if (i == 1)
 		{
-			printf(" ,%ld", fib1);
+			printf(", %ld", fib1);
 		}
 		else
 		{
 			fib1 = fib1 + fib0;
 			fib0 = fib1 - fib0;
-			printf(" ,%ld", fib1);
+			printf(", %ld", fib1);
 		}
 		++i;
 	}
