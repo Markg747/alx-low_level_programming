@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * _putchar - check the code.
+ *@c: variable
  * Return: Always 0.
  */
 
 int _putchar(char c)
 {
-	if (c >= 65 && c<= 90)
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
