@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * _putchar - check the code.
+ *_isupper - check the code.
  *@c: variable
  * Return: Always 0.
  */
 
-int _putchar(char c)
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
