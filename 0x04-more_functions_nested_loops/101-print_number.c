@@ -1,20 +1,38 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *main - Entry point
- *
+ *print_number - prints integer
+ *@n: variable
  *Return: 0
  */
 
-int main(void)
+void print_number(int n)
 {
-	unsigned long int i = 3, n = 612852475143;
+	int copy;
+	int nth;
+	int size = 1;
+	int ones = n % 10;
 
-	for  (; i < 12057; i += 2)
+	n /= 10;
+	copy = n;
+	if (ones < 0)
 	{
-		while (n % i == 0 && n != i)
-			n /= i;
+		ones *= -1, copy *= -1, n *= -1;
+		_putchar('-');
 	}
-	printf("%lu\n", n);
-	return (0);
+	if (copy > 0)
+	{
+		while (copy / 10 != 0)
+		{
+			copy /= 10, size *= 10;
+		}
+		while (size > 0)
+		{
+			nth = n / size;
+			_putchar(48 + nth);
+			n -= nth * size;
+			size /= 10;
+		}
+	}
+	_putchar(48 + ones);
 }
