@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  *_strcpy - copies string pointed by srcincluding \0 to buffer pointed by dest
  *
