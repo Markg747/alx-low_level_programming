@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- *rev_string - reverses string
+ *print_rev - reverses string
  *
  *@s: string variable
  *
  *Return: 0
  */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
 	int i = sizeof(s) + 1;
 
