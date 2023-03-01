@@ -10,7 +10,7 @@
 
 char *string_toupper(char *c)
 {
-	int i;
+	int i = 0;
 
 	while (c[i] != '\0')
 	{
@@ -18,6 +18,7 @@ char *string_toupper(char *c)
 		{
 			c[i] = c[i] - 32;
 		}
+		i++;
 	}
 	return (c);
 }
