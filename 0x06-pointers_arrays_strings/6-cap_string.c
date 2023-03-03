@@ -32,6 +32,9 @@ char *cap_string(char *n)
 			case ')':
 			case '{':
 			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
 
 				if (n[i + 1] >= 97 && n[i + 1] <= 122)
 				{
