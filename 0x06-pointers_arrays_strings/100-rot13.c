@@ -24,6 +24,7 @@ char *rot13(char *n)
 			{
 				n[i] = n[i] - 13;
 			}
+			i++;
 		}
 		i++;
 	}
