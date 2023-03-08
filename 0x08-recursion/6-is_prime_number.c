@@ -21,7 +21,7 @@ int prime(int a, int divider)
 	}
 	else
 	{
-		return (prime(a, divider + 1);
+		return (prime(a, divider + 1));
 	}
 }
 
@@ -47,6 +47,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (prime(a, divider + 1));
+		return (prime(n, divider + 1));
 	}
 }
