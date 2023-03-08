@@ -14,6 +14,10 @@ int square(int x, int y)
 	{
 		return (1);
 	}
+	if (y < 0)
+	{
+		return (-1);
+	}
 	else if (x * x == y)
 	{
 		return (x);
