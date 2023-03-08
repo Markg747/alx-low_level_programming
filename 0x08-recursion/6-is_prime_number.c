@@ -3,25 +3,25 @@
 /**
  *prime - checks if number is a prime number
  *
- *@n: number to check
+ *@a: number to check
  *@divider: tester
  *
  *Return: prime number
  */
 
-int prime(int n, int divider)
+int prime(int a, int divider)
 {
-	if (n == divider)
+	if (a == divider)
 	{
 		return (1);
 	}
-	else if ((n % divider) == 0)
+	else if ((a % divider) == 0)
 	{
 		return (0);
 	}
 	else
 	{
-		return (n, divider + 1);
+		return (prime(a, divider + 1);
 	}
 }
 
@@ -47,6 +47,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (prime(n, divider + 1));
+		return (prime(a, divider + 1));
 	}
 }
