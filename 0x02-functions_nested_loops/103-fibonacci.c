@@ -23,6 +23,6 @@ int main(void)
 			++i;
 		}
 	}
-	printf("%u\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
