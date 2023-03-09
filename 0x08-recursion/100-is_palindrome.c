@@ -38,7 +38,7 @@ int pali_checker(char *c, int i, int j)
 	}
 	if (c[i] == c[j - 1])
 	{
-		return (1);
+		return (c[i] == c[j]);
 	}
 	if (c[i] != c[i - j])
 	{
