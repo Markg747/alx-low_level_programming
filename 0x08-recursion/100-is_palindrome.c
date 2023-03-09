@@ -18,6 +18,7 @@ int string_len(char *c)
 	{
 		return (1 + string_len(c + 1));
 	}
+	return (0);
 }
 
 /**
@@ -43,6 +44,7 @@ int pali_checker(char *c, int i, int j)
 			return (pali_checker(c, i + 1, j - 1));
 		}
 	}
+	return (0);
 }
 
 /**
