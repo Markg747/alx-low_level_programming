@@ -32,21 +32,16 @@ int string_len(char *c)
 
 int pali_checker(char *c, int i, int j)
 {
-	if (i == j)
+	if (*(c + i) == *(c + j))
 	{
-		return (0);
-	}
-	if (c[i] == c[j - 1])
-	{
-		return (1);
-	}
-	if (c[i] != c[i - j])
-	{
-		return (0);
-	}
-	else
-	{
-		return (pali_checker(c, i + 1, j - 1));
+		if (i == j || i == j + 1)
+		{
+			return (1);
+		}
+		else
+		{
+			return (pali_checker(c, i + 1, j - 1));
+		}
 	}
 }
 
