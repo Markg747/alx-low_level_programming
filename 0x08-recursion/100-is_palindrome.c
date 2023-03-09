@@ -38,7 +38,7 @@ int pali_checker(char *c, int i, int j)
 	}
 	if (c[i] == c[j - 1])
 	{
-		return (c[i] == c[j]);
+		return (1);
 	}
 	if (c[i] != c[i - j])
 	{
@@ -61,6 +61,11 @@ int pali_checker(char *c, int i, int j)
 int is_palindrome(char *s)
 {
 	int len = string_len(s);
+
+	if (*s != s[len - 1] || len == 0)
+	{
+		return (0);
+	}
 
 	return (pali_checker(s, s[0] + 1, len - 1));
 }
