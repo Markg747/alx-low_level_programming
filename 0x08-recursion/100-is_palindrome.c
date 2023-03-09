@@ -65,6 +65,6 @@ int is_palindrome(char *s)
 	}
 	else
 	{
-		return (pali_checker(s, 0, len - 1));
+		return (pali_checker(s, s[0] + 1, len - 1));
 	}
 }
