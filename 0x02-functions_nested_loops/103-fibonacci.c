@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long fib0 = 1;
-	long fib1 = 2;
-	long sum = fib1;
+	unsigned long fib0 = 1;
+	unsigned long fib1 = 2;
+	unsigned long sum = fib1;
 	int i = 0;
 
 	while (fib0 + fib1 < 4000000)
@@ -23,6 +23,6 @@ int main(void)
 			++i;
 		}
 	}
-	printf("%ld\n", sum);
+	printf("%u\n", sum);
 	return (0);
 }
