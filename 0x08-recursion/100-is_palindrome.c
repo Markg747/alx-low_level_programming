@@ -33,9 +33,9 @@ int string_len(char *c)
 
 int pali_checker(char *c, int i, int j)
 {
-	if (*(c + i) == *(c + j))
+	if (c[i] == c[j])
 	{
-		if (i == j || i == j + 1)
+		if (i == j || i == j - 1)
 		{
 			return (1);
 		}
@@ -59,12 +59,12 @@ int is_palindrome(char *s)
 {
 	int len = string_len(s);
 
-	if (*s == '\0')
+	if (len == 0 || *s != s[len - 1])
 	{
-		return (1);
+		return (0);
 	}
 	else
 	{
-		return (pali_checker(s, s[0] + 1, len - 1));
+		return (pali_checker(s, 0, len - 1));
 	}
 }
