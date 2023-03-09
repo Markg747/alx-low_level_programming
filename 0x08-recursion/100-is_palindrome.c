@@ -62,5 +62,12 @@ int is_palindrome(char *s)
 {
 	int len = string_len(s);
 
-	return (pali_checker(s, 0, len - 1));
+	if (*s == '\0')
+	{
+		return (1);
+	}
+	else
+	{
+		return (pali_checker(s, 0, len - 1));
+	}
 }
