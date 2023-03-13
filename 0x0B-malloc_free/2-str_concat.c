@@ -41,11 +41,11 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (i = 0; i != '\0'; i++)
+	for (int i = 0; i != '\0'; i++)
 	{
 		ptr[i] = s1[i];
 	}
-	for (j = 0; j != '\0'; j++)
+	for (int j = 0; j != '\0'; j++)
 	{
 		ptr[i] = s2[j];
 		i++;
