@@ -8,6 +8,7 @@
  *@s1: first string
  *@s2: second string
  *@n: if it is >= to the length of s2 then use the entire string s2
+ *
  *Return: pointer to the concatenated string
  */
 
@@ -15,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
 	int i;
-	int j;
+	unsigned int j;
 	int len1 = 0;
 
 	if (s1 == NULL)
