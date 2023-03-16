@@ -26,10 +26,5 @@ int main(int argc, char *argv[])
 	num2 = (atoi(argv[2]));
 	mul = num1 * num2;
 	printf("%d\n", mul);
-	if (num1 != atoi(argv[1]) && num2 != atoi(argv[2]))
-	{
-		printf("Error\n");
-		exit(98);
-	}
 	return (0);
 }
