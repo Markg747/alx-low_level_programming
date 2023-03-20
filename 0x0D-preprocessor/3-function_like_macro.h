@@ -1,8 +1,4 @@
 #ifndef ABS
-#define ABS(X)
+#define ABS(X) ((-X) * (-1))
 
-#if (-X)
-	return (X * -1);
-#else
-	return(X);
 #endif
