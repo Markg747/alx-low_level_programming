@@ -10,13 +10,9 @@
 
 void print_dog(struct dog *d)
 {
-	char *name;
-	double age;
-	char *owner;
-
 	if (d == NULL)
 	{
-		return;
+		;
 	}
 	if ((*d).name == NULL)
 	{
