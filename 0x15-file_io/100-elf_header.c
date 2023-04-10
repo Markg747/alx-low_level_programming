@@ -1,6 +1,4 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - entry point for program to get header of ELF file
@@ -13,3 +11,4 @@ int main(int argc, char *argv[])
 	printf("argc:%d, argv:%p\n", argc, (void *)*argv);
 	return (1);
 }
+
